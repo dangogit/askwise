@@ -42,20 +42,41 @@
       .section {
         padding: 20px 15px;
         margin-bottom: 25px;
-      }
-
-      table {
+      }      table {
         display: block;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         margin: 15px -15px;
         width: calc(100% + 30px);
+        background: white;
+        border-radius: var(--border-radius);
       }
 
       td, th {
-        min-width: 120px;
-        padding: 10px;
-        font-size: 0.95em;
+        min-width: 100px;
+        padding: 12px 10px;
+        font-size: 0.9em;
+        white-space: normal;
+        vertical-align: top;
+      }
+
+      td:first-child {
+        min-width: 40px;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+
+      td:nth-child(2) {
+        min-width: 140px;
+        font-weight: 500;
+      }
+
+      td:last-child {
+        min-width: 160px;
+      }
+
+      tr:hover td {
+        background-color: #f8fafc;
       }
 
       .highlight {
@@ -68,9 +89,7 @@
         margin-bottom: 10px;
         font-size: 0.95em;
       }
-    }
-
-    @media (max-width: 480px) {
+    }    @media (max-width: 480px) {
       body {
         padding: 10px 8px;
       }
@@ -88,9 +107,28 @@
         padding: 15px 12px;
       }
 
-      td, th {
-        padding: 8px;
+      table {
+        margin: 10px -12px;
+        width: calc(100% + 24px);
         font-size: 0.9em;
+      }
+
+      td, th {
+        padding: 10px 8px;
+        font-size: 0.85em;
+        line-height: 1.4;
+      }
+
+      td:first-child {
+        padding-right: 12px;
+      }
+
+      tr td:first-child::after {
+        content: ".";
+      }
+
+      .section h2 + table {
+        margin-top: 15px;
       }
     }
 
