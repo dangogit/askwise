@@ -17,4 +17,4 @@ Development plan and cost estimation for AI-powered sales agents platform built 
 
 ## Live Demo
 
-Visit the live site: https://[your-github-username].github.io/askwise/
+Visit the live site: https://dangogit.github.io/askwise/
