@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>תוכנית פיתוח - מערכת סוכני מכירות מבוססי AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #1e40af;
+      --accent-color: #60a5fa;
+      --text-color: #1f2937;
+      --background-color: #f8fafc;
+      --border-radius: 8px;
+    }
+    
+    body {
+      font-family: 'Rubik', 'Segoe UI', sans-serif;
+      background: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.7;
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 15px;
+      }
+    }
+
+    h1, h2, h3 {
+      color: var(--primary-color);
+      margin-bottom: 1.2em;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      text-align: center;
+      margin-bottom: 1.5em;
+      padding-bottom: 0.5em;
+      border-bottom: 3px solid var(--accent-color);
+    }
+
+    h2 {
+      font-size: 1.6em;
+      border-right: 4px solid var(--accent-color);
+      padding-right: 15px;
+    }
+
+    .section {
+      background: white;
+      margin-bottom: 40px;
+      padding: 30px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .highlight {
+      background: linear-gradient(to left, #eef2ff, #e0e7ff);
+      padding: 15px 20px;
+      border-radius: var(--border-radius);
+      font-weight: 500;
+      text-align: center;
+      border-right: 4px solid var(--primary-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: right;
+    }
+
+    th {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 500;
+    }
+
+    th:first-child {
+      border-top-right-radius: var(--border-radius);
+    }
+
+    th:last-child {
+      border-top-left-radius: var(--border-radius);
+    }
+
+    tr:last-child td:first-child {
+      border-bottom-right-radius: var(--border-radius);
+    }
+
+    tr:last-child td:last-child {
+      border-bottom-left-radius: var(--border-radius);
+    }
+
+    td {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    tr:hover td {
+      background-color: #f8fafc;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 12px;
+      padding-right: 25px;
+      position: relative;
+    }
+
+    li:before {
+      content: "✓";
+      color: var(--primary-color);
+      position: absolute;
+      right: 0;
+      font-weight: bold;
+    }
+
+    strong {
+      color: var(--secondary-color);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <h1>תוכנית פיתוח - מערכת סוכני מכירות מבוססי AI</h1>
+
+  <div class="section">
+    <h2>🎯 מטרת הפרויקט</h2>
+    <p>הפיכת Askwise לפלטפורמה של סוכני מכירות חכמים בוואטסאפ, הפועלים בעברית, מבוססי נתונים מותאמים אישית ומחוברים לדשבורד ניהולי, מערכת ניהול משתמשים ומערכת CRM (Monday).</p>
+  </div>
+
+  <div class="section">
+    <h2>🗓️ לוח זמנים ויעדים (8 שבועות)</h2>
+    <table>
+      <tr><th>שבוע</th><th>אבן דרך</th><th>תיאור</th></tr>
+      <tr><td>1</td><td>העברת מערכת וסבב מפתחות</td><td>הגדרת סביבת פיתוח, רענון מפתחות API ואבטחה</td></tr>
+      <tr><td>2</td><td>מפת הנחיה ומנוע שיחה</td><td>בניית בוט מומחה מכירה כולל טיפול בהתנגדויות</td></tr>
+      <tr><td>3</td><td>בדיקות שיחה וזיכרון אישי</td><td>שיפור איכות השיחה, התאמה אישית על סמך היסטוריה</td></tr>
+      <tr><td>4</td><td>ניהול משתמשים ומידע</td><td>מערכת אדמין לניהול לקוחות, סוכנים, קבצים והרשאות</td></tr>
+      <tr><td>5</td><td>דשבורד ניהולי</td><td>צפייה בשיחות, סטטוס סוכנים, סינון לפי משתמש</td></tr>
+      <tr><td>6</td><td>דשבורד ללקוח ו-QA</td><td>לוח מחוונים אישי, הרשאות גישה, בדיקות סופיות</td></tr>
+      <tr><td>7</td><td>אנליטיקה וחיבור Monday</td><td>דוחות KPI, סנכרון עסקאות, גימור מוצר</td></tr>
+      <tr><td>8</td><td>אוטומציה ליצירת סוכנים</td><td>הקמת סוכני GreenAPI אוטומטית לאחר רכישת מנוי</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>💰 עלות פיתוח</h2>
+    <p class="highlight">160 שעות פיתוח × 250 ₪ לשעה = <strong>40,000 ₪</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>🌐 שירותים חיצוניים (הערכת עלות חודשית)</h2>
+    <table>
+      <tr><th>שירות</th><th>עלות חודשית</th><th>הערות</th></tr>
+      <tr><td>OpenAI</td><td>₪400–₪1,200</td><td>לפי כמות שיחות</td></tr>
+      <tr><td>Pinecone</td><td>₪500–₪2,000</td><td>תלוי במספר סוכנים ונתונים</td></tr>
+      <tr><td>GreenAPI</td><td>₪200–₪400</td><td>₪20 לסוכן × 10–20 סוכנים</td></tr>
+      <tr><td>NeonDB</td><td>₪100–₪300</td><td>ניהול משתמשים, שיחות ונתונים</td></tr>
+      <tr><td>Monday</td><td>₪0–₪200</td><td>בהתאם לרישוי ושימוש</td></tr>
+    </table>
+    <p class="highlight">סה"כ חודשי משוער: <strong>₪1,200 – ₪4,100</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>📦 תוצרים סופיים (MVP גרסת פלטפורמה)</h2>
+    <ul>
+      <li>מערכת אדמין לניהול לקוחות, סוכנים, קבצים והרשאות</li>
+      <li>דשבורד אישי לכל משתמש עם נתונים רלוונטיים</li>
+      <li>סוכן וואטסאפ מקצועי דובר עברית עם זרימת שיחה חכמה</li>
+      <li>אנליטיקה חכמה עם KPI מותאמים</li>
+      <li>אינטגרציה עם Monday לניהול עסקאות</li>
+      <li>אוטומציה ליצירת סוכנים לאחר רכישת מנוי</li>
+    </ul>
+  </div>
+</body>
+</html>
